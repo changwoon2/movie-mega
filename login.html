@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Login</title>
+    <link rel="shortcut icon" type="image/png" href="img/favicon/favicon.png" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+  </head>
+  <body>
+    <!-- 로그인폼 -->
+
+    <div class="login-box">
+      <div class="the-goods">
+        <span>Mapo Movie</span>
+      </div>
+      <form class="loginform" method="post">
+        <div class="inputDiv">
+          <input
+            class="txtb"
+            type="text"
+            name="userId"
+            placeholder="Email"
+            autocomplete="off"
+          />
+          <i class="fas fa-envelope"></i>
+        </div>
+        <div class="inputicon">
+          <input
+            class="txtb"
+            type="password"
+            name="password"
+            placeholder="Password"
+          />
+          <i class="fas fa-keyboard"></i>
+        </div>
+        <input
+          class="login-btn"
+          type="button"
+          name="login-btn"
+          value="Login"
+          style="background-color: transparent"
+        />
+      </form>
+      <div id="back"><a href="index.html">BACK</a></div>
+    </div>
+
+    <!-- <div class="show-login-btn">
+      <i class="fas fa-play-circle"></i>
+    </div> -->
+    <!-- 비디오영역 -->
+    <video autoplay controls muted id="myvideo">
+      <source src="video/MAIN TEASER.mp4" type="video/mp4" />
+    </video>
+    <!-- 제이쿼리 -->
+    <script src="js/jquery-3.6.0.js"></script>
+    <!-- 텍스트효과 -->
+    <script src="js/text.js"></script>
+  </body>
+</html>

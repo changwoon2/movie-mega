@@ -1,0 +1,358 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;1,100&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Noto Sans", sans-serif;
+}
+body {
+  -ms-overflow-style: none;
+  background: #181926;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#logo {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 240px;
+  top: 60px;
+  z-index: 1;
+}
+
+.chatbox {
+  animation: motion 0.3s linear 0s infinite alternate;
+  margin-top: 0;
+}
+
+@keyframes motion {
+  0% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: 5px;
+  }
+}
+
+#home {
+  position: absolute;
+  left: 700px;
+  top: 60px;
+  font-size: 20px;
+  line-height: 24px;
+  z-index: 1;
+  font-weight: bold;
+}
+#home a:hover {
+  color: #9d24fc;
+}
+#home a {
+  color: white;
+}
+
+#header {
+  position: absolute;
+  left: 812px;
+  top: 60px;
+  font-size: 20px;
+  line-height: 24px;
+  z-index: 1;
+  color: white;
+  font-weight: bold;
+}
+#header:hover {
+  color: #9d24fc;
+}
+
+#content {
+  position: absolute;
+  left: 978px;
+  top: 60px;
+  font-size: 20px;
+  line-height: 24px;
+  z-index: 1;
+  font-weight: bold;
+}
+
+#content a {
+  color: white;
+}
+#content a:hover {
+  color: #9d24fc;
+}
+#login {
+  position: absolute;
+  width: 94px;
+  height: 24px;
+  left: 1107px;
+  top: 60px;
+  font-size: 20px;
+  line-height: 24px;
+  z-index: 1;
+  font-weight: bold;
+}
+#login a:hover {
+  color: #9d24fc;
+}
+#login a {
+  color: #c4c4c4;
+}
+
+.MapoMovie {
+  position: absolute;
+  left: 1500px;
+  top: 60px;
+  color: white;
+  font-size: 25px;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+}
+
+.MapoMovie div {
+  font-family: "Alfa Slab One", cursive;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  animation: MapoMovie 1s infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+@keyframes MapoMovie {
+  0%,
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+}
+
+/* 슬라이드 시작 */
+
+/*
+  
+  Responsive View
+
+*/
+
+/* Smartphones */
+@media only screen and (max-width: 768px) {
+  .wrapper span a,
+  .strip-carousel .frames {
+    margin: 10px 0 0 10%;
+  }
+  .strip-carousel .arrow-left,
+  .strip-carousel .arrow-right {
+    width: 10%;
+  }
+}
+
+/* Tablets (potrait) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .wrapper span a,
+  .strip-carousel .frames {
+    margin: 10px 0 0 5%;
+  }
+  .strip-carousel .arrow-left,
+  .strip-carousel .arrow-right {
+    width: 5%;
+  }
+}
+
+/* Tablets (landscape) */
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .wrapper span a,
+  .strip-carousel .frames {
+    margin: 10px 0 0 5%;
+  }
+  .strip-carousel .arrow-left,
+  .strip-carousel .arrow-right {
+    width: 5%;
+  }
+}
+
+/* Desktop and above */
+@media only screen and (min-width: 1440px) {
+  .wrapper span a,
+  .strip-carousel .frames {
+    margin: 10px 0 0 5%;
+  }
+  .strip-carousel .arrow-left,
+  .strip-carousel .arrow-right {
+    width: 5%;
+  }
+}
+
+/*
+
+  html, body
+
+*/
+
+/* No Select */
+.noselect {
+  user-select: none;
+}
+
+/*
+
+  Wrapper
+
+*/
+
+/* Wrapper */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 150px;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+
+/*
+
+  Strip Carousel
+
+*/
+
+/* Strip Carousel */
+.strip-carousel {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Strip Carousel Frames */
+.frames {
+  width: 100%;
+  height: 80%;
+  display: inline-block;
+  position: absolute;
+  padding: 0;
+}
+
+/* Strip Carousel Frame */
+.frame {
+  display: inline-block;
+  height: 100%;
+  float: left;
+  margin-right: 15px;
+  transition: transform 0.8s;
+  border-radius: 8px;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 50%;
+  height: auto;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  display: flex;
+  margin-top: -50px;
+  margin-left: 200px;
+  transform: translate(-100%, -100%);
+}
+
+.frame:hover .image {
+  opacity: 0.7;
+}
+
+.frame:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #9d24fc;
+  color: white;
+  font-size: 15px;
+  padding: 16px 32px;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  text-align: center;
+  font-weight: bold;
+}
+
+.image:hover {
+  transform: scale(1.2);
+}
+
+/* Navigation Arrows */
+.strip-carousel .arrow-left,
+.strip-carousel .arrow-right {
+  display: none;
+  position: absolute;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: "Advent Pro", sans-serif;
+  font-size: 70px;
+  font-weight: 300;
+  color: white;
+
+  text-align: center;
+
+  z-index: 1;
+}
+
+/* Navigation Arrow Left */
+.strip-carousel .arrow-left {
+  float: left;
+  left: 0;
+}
+
+/* Navigation Arrow Right */
+.strip-carousel .arrow-right {
+  float: right;
+  right: 0;
+}
+
+/* Navigation Arrow Left & Right Hover */
+.strip-carousel .arrow-left:hover,
+.strip-carousel .arrow-right:hover {
+  cursor: pointer;
+}
+
+/* Section Title */
+.wrapper span a {
+  width: 90%;
+  height: 25px;
+  display: block;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 25px;
+  font-family: "Inter";
+  padding: 0;
+
+  color: white;
+  text-decoration: none;
+  cursor: default;
+}
+
+/* Section Title Hover */
+.wrapper span a:hover {
+  text-decoration: none;
+  cursor: default;
+}
+
+.frame img {
+  object-position: center;
+  object-fit: cover;
+  width: 90%;
+  height: 90%;
+}

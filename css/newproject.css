@@ -1,0 +1,609 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;1,100&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Noto Sans", sans-serif;
+}
+
+body {
+  background: #121829;
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.text_box {
+  position: absolute;
+  color: white;
+  padding-top: 150px;
+  padding-left: 240px;
+  height: 100px;
+  font-size: 30px;
+}
+
+/* 로고 */
+#logo {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 240px;
+  top: 60px;
+  z-index: 1;
+}
+
+.chatbox {
+  animation: motion 0.3s linear 0s infinite alternate;
+  margin-top: 0;
+}
+
+@keyframes motion {
+  0% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: 5px;
+  }
+}
+
+/* 헤더영역글 */
+#home {
+  position: absolute;
+  left: 700px;
+  top: 60px;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 24px;
+  z-index: 1;
+  color: white;
+}
+#home:hover {
+  color: #9d24fc;
+}
+
+#header {
+  position: absolute;
+  left: 812px;
+  top: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 24px;
+  z-index: 1;
+}
+#header a:hover {
+  color: #9d24fc;
+}
+#header a {
+  color: white;
+}
+#content {
+  position: absolute;
+  left: 978px;
+  top: 60px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  z-index: 1;
+}
+
+#content a {
+  color: white;
+}
+#content a:hover {
+  color: #9d24fc;
+}
+#login {
+  position: absolute;
+  width: 94px;
+  height: 24px;
+  left: 1107px;
+  top: 60px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  z-index: 1;
+}
+
+#login a {
+  color: #c4c4c4;
+}
+
+#login a:hover {
+  color: #9d24fc;
+}
+
+/* 메뉴선 */
+#var {
+  position: absolute;
+  width: 0px;
+  height: 1079px;
+  left: 1569px;
+  top: 1px;
+  border: 1px solid #ffffff;
+}
+
+#var:hover {
+  border: 1px solid #9d24fc;
+}
+
+.facebook {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 1598px;
+  top: 313px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.facebook img {
+  animation: rotate_image 6s linear infinite;
+  transform-origin: 50% 50%;
+}
+
+.facebook img:hover {
+  border: solid 3px #9d24fc;
+  border-radius: 50px;
+}
+@keyframes rotate_image {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.inst {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 1598px;
+  top: 398px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.inst img {
+  animation: rotate_image 6s ease-out infinite;
+  transform-origin: 50% 50%;
+}
+
+.inst img:hover {
+  border: solid 3px #9d24fc;
+  border-radius: 50px;
+}
+@keyframes rotate_image {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.tw {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 1598px;
+  top: 475px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.tw img {
+  animation: rotate_image 6s ease-in-out infinite;
+  transform-origin: 50% 50%;
+}
+
+.tw img:hover {
+  border: solid 3px #9d24fc;
+  border-radius: 50px;
+}
+@keyframes rotate_image {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.texthover:hover .image {
+  opacity: 0.3;
+}
+
+.texthover:hover .middle {
+  opacity: 1;
+}
+
+/* 카드영역스타일 */
+.imgone {
+  position: absolute;
+  left: 240px;
+  top: 218px;
+}
+
+.imgtwo {
+  position: absolute;
+  left: 552px;
+  top: 218px;
+}
+
+.imgthree {
+  position: absolute;
+  left: 864px;
+  top: 218px;
+}
+
+.imgfour {
+  position: absolute;
+  left: 1176px;
+  top: 218px;
+}
+
+.container {
+  position: absolute;
+  left: 240px;
+  top: 648px;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text {
+  background-color: #9d24fc;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.imgsix {
+  position: absolute;
+  left: 556px;
+  top: 648px;
+}
+
+.imgseven {
+  position: absolute;
+  left: 864px;
+  top: 648px;
+}
+
+.imgeight {
+  position: absolute;
+  left: 1176px;
+  top: 648px;
+}
+
+/* 헴버거 텍스트 */
+.kakao {
+  position: absolute;
+  left: 280px;
+  top: 270px;
+}
+.naver {
+  position: absolute;
+  left: 350px;
+  top: 270px;
+}
+
+.kakao:hover,
+.naver:hover {
+  /* 흔들기 애니메이션을 시작하고 애니메이션을 0.5초간 지속시킵니다. */
+  animation: shake 0.9s;
+
+  /* 애니메이션이 완료되면 다시 시작합니다. */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+.varone {
+  position: absolute;
+  width: 440px;
+  border: 1px solid #7b7878;
+  top: 340px;
+  left: 140px;
+}
+
+.vartwo {
+  position: absolute;
+  width: 440px;
+  border: 1px solid #7b7878;
+  top: 420px;
+  left: 140px;
+}
+
+.Reservation {
+  position: absolute;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  top: 481px;
+  left: 140px;
+  letter-spacing: 0.1em;
+}
+.MapoMovie {
+  position: absolute;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  top: 521px;
+  left: 140px;
+  letter-spacing: 0.1em;
+}
+
+.Theater {
+  position: absolute;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  top: 561px;
+  left: 140px;
+  letter-spacing: 0.2em;
+}
+.Event {
+  position: absolute;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  top: 601px;
+  left: 140px;
+  letter-spacing: 0.1em;
+}
+.head {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 358px;
+  left: 202px;
+}
+
+.mond {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 358px;
+  left: 377px;
+}
+.head:hover,
+.mond:hover {
+  filter: opacity(0.4) drop-shadow(0 0 0 #7b7878);
+}
+
+.barstext {
+  position: absolute;
+  width: 249px;
+  height: 48px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  left: 140px;
+  top: 188px;
+}
+.easylogin {
+  position: absolute;
+  width: 96px;
+  height: 24px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  left: 140px;
+  top: 280px;
+  color: #ffffff;
+}
+
+.Service {
+  position: absolute;
+  width: 71px;
+  height: 24px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  top: 370px;
+  left: 269px;
+  color: #ffffff;
+}
+
+.Notice {
+  position: absolute;
+  width: 71px;
+  height: 24px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  top: 370px;
+  left: 443px;
+  color: #ffffff;
+}
+.tane {
+  position: absolute;
+  left: 140px;
+  top: 700px;
+}
+
+.tane:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+#barslogo img {
+  position: absolute;
+  left: 140px;
+  top: 120px;
+}
+
+#barslogo img {
+  animation: rotate_image 6s linear infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes rotate_image {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.barstext:hover,
+.Reservation:hover,
+.MapoMovie:hover,
+.Theater:hover,
+.Event:hover,
+.Notice:hover,
+.Service:hover,
+.easylogin:hover {
+  color: #9d24fc;
+}
+
+/* 카피라이트 */
+.gnb {
+  position: absolute;
+  width: 312px;
+  height: 24px;
+  left: 1470px;
+  top: 830px;
+  line-height: 24px;
+  transform: rotate(90deg);
+  white-space: nowrap;
+}
+
+.gnb a {
+  font-size: 20px;
+  position: relative;
+  color: #c4c4c4;
+  /*텍스트에서 밑줄 간격 띄우기*/
+  padding-bottom: 5px;
+}
+
+.gnb a:before {
+  content: "";
+  position: absolute; /*부모 요소에는 position: relative를 주어야 한다.*/
+  background-color: #9d24fc;
+  height: 2px; /*밑줄 굵기*/
+  width: 0; /*초기에 보이지 않도록*/
+  bottom: 0; /*a태그 아래에 위치시키기*/
+  transition: 0.7s; /*애니메이션 동작 실행 시간 정의*/
+  /*가상 요소를 가운데로 이동시키기*/
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*태그가 호버링 되면 가상 요소의 크기를 100%로 키우기*/
+.gnb a:hover:before {
+  width: 100%;
+}
+
+/* 햄버거메뉴 */
+
+.mBtn a {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: url("../img/newporject/bars.png");
+  left: 83.23%;
+  right: 14.17%;
+  top: 5.56%;
+  bottom: 89.81%;
+}
+.mNav {
+  z-index: 2;
+  position: fixed;
+  background-color: black;
+  top: 0;
+  right: -100%;
+  width: 40%;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+.mNav.on {
+  right: 0;
+}
+.bg-shadow {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  cursor: pointer;
+}
+
+.sub {
+  position: relative;
+  padding-top: 30px;
+}
+.closeBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  filter: opacity(0.4) drop-shadow(0 0 0 white);
+}
+.closeBtn a {
+  display: block;
+  text-indent: -9999px;
+  width: 50px;
+  height: 50px;
+  background: url("../img/newporject/close_icon.png");
+  margin-top: 25px;
+  margin-right: 20px;
+}
