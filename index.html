@@ -2,283 +2,49 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="image/png" href="img/favicon/favicon.png" />
-    <title>Mapo Movie Home</title>
-    <!-- index css -->
-    <link rel="stylesheet" href="css/newproject.css" />
-    <!-- 모달창 css -->
-    <link rel="stylesheet" href="css/element_to_pop_up.css" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="mysite" />
+    <meta
+      name="description"
+      content="메가박스 사이트 따라하면서 배우는 튜토리얼입니다."
+    />
+    <meta
+      name="keywords"
+      content="메가박스, 유투브, 영화, 최신영화, 영화관, CGV, 롯데시네마, 웹스토리보이, 웹스, 사이트 만들기, 따라하기"
+    />
+    <title>메가박스 사이트 코딩하기</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset01.css" />
+    <link rel="stylesheet" href="css/style01.css" />
+
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="icons/favicon.ico" />
+    <link rel="apple-touch-icon-precomposed" href="icons/favicon_72.png" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="96x96"
+      href="icons/favicon_96.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="icons/favicon_144.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="192x192"
+      href="icons/favicon_192.png"
+    />
   </head>
   <body>
-    <!-- 오른쪽영역 -->
-    <div id="logo">
-      <img src="img/newporject/LOGO.png" class="chatbox" alt="로고자리" />
-    </div>
-    <div id="home">HOME</div>
-    <div id="header">
-      <a href="towproject.html">MapoMovie</a>
-    </div>
-    <div id="content">
-      <a href="theater.html">Theater</a>
-    </div>
-    <div id="login"><a href="login.html">LOGIN</a></div>
-    <div id="var"></div>
-
-    <div class="facebook">
-      <a href="https://www.facebook.com/mapoguoffice" target="_blank"
-        ><img src="img/newporject/facebook.png" alt="fb"
-      /></a>
-    </div>
-    <div class="inst">
-      <a
-        href="https://www.instagram.com/accounts/login/?next=/mapogu_official/"
-        target="_blank"
-        ><img src="img/newporject/Instagram.png" alt="ster"
-      /></a>
-    </div>
-    <div class="tw">
-      <a href="https://twitter.com/prmapo" target="_blank"
-        ><img src="img/newporject/Twitter Squared.png" alt="tw"
-      /></a>
-    </div>
-
-    <div class="gnb">
-      <a href="https://github.com/changwoon2/reset" target="_blank"
-        >changwoon ⓒ All Rights Reserved.</a
-      >
-    </div>
-
-    <!-- 카드 영역 -->
-    <div class="text_box" data-trigger>
-      <span class="text_office"></span>
-    </div>
-    <h1></h1>
-    <div class="texthover">
-      <div class="imgone">
-        <img src="img/newporject/AQUAMAN.jpg" alt="AQUAMAN" class="image" />
-        <div class="middle">
-          <div class="text">AQUAMAN</div>
-        </div>
-      </div>
-    </div>
-    <div class="texthover">
-      <div class="imgtwo">
-        <img src="img/newporject/django.jpg" alt="django" class="image" />
-        <div class="middle">
-          <div class="text">DJANGO</div>
-        </div>
-      </div>
-    </div>
-    <div class="texthover">
-      <div class="imgthree">
-        <img src="img/newporject/insideout.jpg" alt="insideout" class="image" />
-        <div class="middle">
-          <div class="text">INSIDEOUT</div>
-        </div>
-      </div>
-    </div>
-    <div class="texthover">
-      <div class="imgfour">
-        <img
-          src="img/newporject/Spider-Man.jpg"
-          alt="Spider-Man"
-          class="image"
-        />
-        <div class="middle">
-          <div class="text">SPIDERMAN</div>
-        </div>
-      </div>
-    </div>
-    <div class="texthover">
-      <div class="container">
-        <img src="img/newporject/Rampage.jpg" alt="Avatar" class="image" />
-        <div class="middle">
-          <div class="text">RAMPAGE</div>
-        </div>
-      </div>
-    </div>
-    <div class="texthover">
-      <div class="imgsix">
-        <img src="img/newporject/hobbitone.png" alt="hobbit" class="image" />
-        <div class="middle">
-          <div class="text">HOBBIT</div>
-        </div>
-      </div>
-    </div>
-    <div class="texthover">
-      <div class="imgseven">
-        <img
-          src="img/newporject/Passengers.jpg"
-          alt="Passengers"
-          class="image"
-        />
-        <div class="middle">
-          <div class="text">PASSENGERS</div>
-        </div>
-      </div>
-    </div>
-    <div class="texthover">
-      <div class="imgeight">
-        <img src="img/newporject/Batman.jpg" alt="Batman" class="image" />
-        <div class="middle">
-          <div class="text">BATMAN</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 모달창 영역 -->
-    <div id="element_to_pop_up">
-      <video
-        width="640"
-        height="360"
-        src="video/AQUAMAN.mp4"
-        controls
-        autoplay
-        loop
-        muted
-        preload="metadata"
-      ></video>
-    </div>
-
-    <div id="element_to_pop_up_two">
-      <video
-        width="640"
-        height="360"
-        src="video/DJANGO.mp4"
-        controls
-        autoplay
-        loop
-        muted
-        preload="metadata"
-      ></video>
-    </div>
-
-    <div id="element_to_pop_up_three">
-      <video
-        width="640"
-        height="360"
-        src="video/INSIDEOUT.mp4"
-        controls
-        autoplay
-        loop
-        muted
-        preload="metadata"
-      ></video>
-    </div>
-
-    <div id="element_to_pop_up_four">
-      <video
-        width="640"
-        height="360"
-        src="video/SPIDERMAN.mp4"
-        controls
-        autoplay
-        loop
-        muted
-        preload="metadata"
-      ></video>
-    </div>
-
-    <div id="element_to_pop_up_container">
-      <video
-        width="640"
-        height="360"
-        src="video/RAMPAGE.mp4"
-        controls
-        autoplay
-        loop
-        muted
-        preload="metadata"
-      ></video>
-    </div>
-
-    <div id="element_to_pop_up_six">
-      <video
-        width="640"
-        height="360"
-        src="video/HOBBIT.mp4"
-        controls
-        autoplay
-        loop
-        muted
-        preload="metadata"
-      ></video>
-    </div>
-
-    <div id="element_to_pop_up_seven">
-      <video
-        width="640"
-        height="360"
-        src="video/PASSENGERS.mp4"
-        controls
-        autoplay
-        loop
-        muted
-        preload="metadata"
-      ></video>
-    </div>
-
-    <div id="element_to_pop_up_eight">
-      <video
-        width="640"
-        height="360"
-        src="video/BATMAN.mp4"
-        controls
-        autoplay
-        loop
-        muted
-        preload="metadata"
-      ></video>
-    </div>
-
-    <!-- 햄버거메뉴 -->
-    <div class="mBtn"><a href="javascript:;"></a></div>
-    <nav class="mNav">
-      <ul class="sub">
-        <div class="closeBtn"><a href="javascript:;"></a></div>
-        <div id="barslogo">
-          <a href="#"><img src="img/newporject/LOGO.png" alt="로고자리" /></a>
-        </div>
-
-        <div id="barslogo">
-          <img src="img/newporject/LOGO.png" alt="로고자리" />
-        </div>
-
-        <div class="barstext">
-          I joined Mapo Movie <br />Get a variety of discounts!
-        </div>
-        <div class="easylogin">Easy login</div>
-
-        <img src="img/newporject/kakao.png" alt="kakao" class="kakao" />
-
-        <img src="img/newporject/naver.png" alt="naver" class="naver" />
-        <div class="varone"></div>
-
-        <img src="img/newporject/Headset.png" alt="head" class="head" />
-        <div class="Service">Service</div>
-
-        <img src="img/newporject/Diamond.png" alt="mond" class="mond" />
-        <div class="Notice">Notice</div>
-        <div class="vartwo"></div>
-        <div class="Reservation">Reservation</div>
-        <div class="MapoMovie">Mapo Movie</div>
-        <div class="Theater">Theater</div>
-        <div class="Event">Event</div>
-
-        <img src="img/newporject/TITANE.png" class="tane" alt="tane" />
-      </ul>
-    </nav>
-    <div class="bg-shadow"></div>
-    <!-- 제이쿼리 -->
+    <!-- 자바스크립트 라이브러리 -->
     <script src="js/jquery-3.6.0.js"></script>
-    <!-- 제이쿼리 모달창 -->
-    <script src="js/jquery.bpopup-0.10.0.min.js"></script>
-    <script src="js/element_to_pop_up.js"></script>
-    <!-- 헴버거 스크립트 -->
-    <script src="js/bars.js"></script>
-    <!-- 텍스트박스 -->
-    <script src="js/textbox.js"></script>
+    <script src="js/modernizr-custom.js"></script>
+    <script src="js/ie-checker.js"></script>
   </body>
 </html>
