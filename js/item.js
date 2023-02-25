@@ -1,17 +1,29 @@
-// 세번째 슬라이드 영역
-let cardContainers = [...document.querySelectorAll(".card-container")];
-let preBtns = [...document.querySelectorAll(".pre-btn")];
-let nxtBtns = [...document.querySelectorAll(".nxt-btn")];
+//슬라이드
+var swiper = new Swiper(".swiper-container", {
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  autoplay: {
+    delay: 5000,
+  },
+});
 
-cardContainers.forEach((item, i) => {
-  let containerDimensions = item.getBoundingClientRect();
-  let containerWidth = containerDimensions.width;
+//영화차트 탭 메뉴
+var movBtn = $(".movie_title > ul > li");
+var movCont = $(".movie_chart > div");
 
-  nxtBtns[i].addEventListener("click", () => {
-    item.scrollLeft += containerWidth - 200;
-  });
+movCont.hide().eq(0).show();
 
-  preBtns[i].addEventListener("click", () => {
-    item.scrollLeft -= containerWidth + 200;
-  });
+movBtn.click(function (e) {
+  e.preventDefault();
+  var target = $(this);
+  var index = target.index();
+  movBtn.removeClass("active");
+  target.addClass("active");
+  movCont.css("display", "none");
+  movCont.eq(index).css("display", "block");
 });
